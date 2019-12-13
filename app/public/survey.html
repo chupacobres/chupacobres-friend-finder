@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+        integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+    <style type="text/css">
+        body {
+            background-size: cover;
+        }
+
+        h2,
+        h3 {
+            font-family: 'Lilita One', cursive;
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Answer these questions to match a friend</h2>
+        <br>
+
+
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="name">Name</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <br>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">Question 1</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+                <option selected>The perfect plan</option>
+                <option value="0">Movies</option>
+                <option value="1">Videogames</option>
+                <option value="2">Netflix And Chill</option>
+                <option value="3">Dinner</option>
+                <option value="4">Park Walk</option>
+                <option value="5">Sports</option>
+
+            </select>
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect02">Question 2</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect02">
+                <option selected>Among this movie list, which one is your favorite?</option>
+                <option value="0">Casablanca</option>
+                <option value="1">The Godfather</option>
+                <option value="2">Back to the Future</option>
+                <option value="3">Batman Returns</option>
+                <option value="4">Lion King</option>
+                <option value="5">Inception</option>
+            </select>
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect03">Question 3</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect03">
+                <option selected>Frequency of Hangouts</option>
+                <option value="0">Once per week</option>
+                <option value="1">Twice per week</option>
+                <option value="2">Three times per week</option>
+                <option value="3">Four times per week</option>
+                <option value="4">Five times per week</option>
+                <option value="5">Every day</option>
+
+            </select>
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect04">Question 4</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect04">
+                <option selected>How's your personality</option>
+                <option value="0">Introvertive</option>
+                <option value="1">Extrovertive</option>
+                <option value="2">Friendly</option>
+                <option value="3">Party monster</option>
+                <option value="4">Extremely Shy</option>
+                <option value="5">I Have Issues</option>
+
+            </select>
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect05">Question 5</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect05">
+                <option selected>Your time management</option>
+                <option value="0">I'm there an hour early</option>
+                <option value="1">A little early</option>
+                <option value="2">On Time Every Time</option>
+                <option value="3">On Time by five minutes</option>
+                <option value="4">I will call you when I get there</option>
+                <option value="5">Oh I Thought You Said Tomorrow!</option>
+
+            </select>
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect06">Question 6</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect06">
+                <option selected>How do you look?</option>
+                <option value="0">Unproportionned</option>
+                <option value="1">Slim</option>
+                <option value="2">Average</option>
+                <option value="3">Athletic</option>
+                <option value="4">Big Boned</option>
+                <option value="5">Plus Sized</option>
+
+            </select>
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect07">Question 7</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect07">
+                <option selected>Conversation skills</option>
+                <option value="0">I don't know anything but laugh at it</option>
+                <option value="1">What did you say?</option>
+                <option value="2">I know it all</option>
+                <option value="3">I Get No Complaints</option>
+                <option value="4">I'll make it up</option>
+                <option value="5">Here's My Autograph</option>
+
+            </select>
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect08">Question 8</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect08">
+                <option selected>Which Do You Prefer Most?</option>
+                <option value="0">Unproportionned</option>
+                <option value="1">Slim</option>
+                <option value="2">Average</option>
+                <option value="3">Athletic</option>
+                <option value="4">Big Boned</option>
+                <option value="5">I don't care</option>
+
+            </select>
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect09">Question 9</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect09">
+                <option selected>Which Day Would You Prefer To Hang?</option>
+                <option value="0">Whenever I feel like</option>
+                <option value="1">Mon-Fri</option>
+                <option value="2">Fri-Sun</option>
+                <option value="3">Weekdays</option>
+                <option value="4">Weekends</option>
+                <option value="5">I'm Open</option>
+
+            </select>
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect10">Question 10</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect10">
+                <option selected>Where would you meet</option>
+                <option value="0">Mall</option>
+                <option value="1">Street</option>
+                <option value="2">Park</option>
+                <option value="3">Restaurant</option>
+                <option value="4">Social Media</option>
+                <option value="5">Our own places</option>
+
+            </select>
+        </div>
+
+
+        <button type="submit" class="btn btn-primary btn-lg" id="submitBtn">Submit</button>
+        <!-- Modal after survey completion -->
+        <div id="specialFriendModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h3 class="modal-title">You are matched to...</h1>
+                    </div>
+                    <div class="modal-body">
+                        <h2 id="specialFriend"></h2>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <p>
+                    <a href="/api/specialfriends">API Friends List</a> |
+                    <a href="https://github.com/chupacobres/chupacobres-friend-finder">GitHub Repo</a>
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <script type="text/javascript">
+        $("#submitBtn").on("click", function (event) {
+            event.preventDefault();
+
+            var valid = true;
+            if ($("#name").val() === "") {
+                valid = false;
+            } 
+            if (valid === true) {
+                var newFriend = {
+                    name: $("#name").val().trim(),
+                    scores: [
+                        $("#inputGroupSelect01").val(),
+                        $("#inputGroupSelect02").val(),
+                        $("#inputGroupSelect03").val(),
+                        $("#inputGroupSelect04").val(),
+                        $("#inputGroupSelect05").val(),
+                        $("#inputGroupSelect06").val(),
+                        $("#inputGroupSelect07").val(),
+                        $("#inputGroupSelect08").val(),
+                        $("#inputGroupSelect09").val(),
+                        $("#inputGroupSelect10").val()
+                    ]
+                };
+                var currentURL = window.location.origin;
+                // Ajax call for receiving response after POST req
+                $.post('/api/friends', newFriend)
+                    .done(function (data) {
+                        $('#specialFriend').html(data.name);
+                        $('#specialFriendModal').modal('open');
+                    });
+            } else {
+                // If a required field is missing, show alert
+                alert("Form unfinished!");
+            }
+        });
+    </script>
+</body>
+
+</html>
