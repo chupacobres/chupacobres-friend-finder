@@ -1,0 +1,26 @@
+{
+  "name": "chupacobres-friend-finder",
+  "version": "1.0.0",
+  "description": "An express.js web app that takes user's data to match friends.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chupacobres/chupacobres-friend-finder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chupacobres/chupacobres-friend-finder/issues"
+  },
+  "homepage": "https://github.com/chupacobres/chupacobres-friend-finder#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}
