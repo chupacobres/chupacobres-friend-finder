@@ -24,6 +24,7 @@
     <style type="text/css">
         body {
             background-size: cover;
+            margin-top: 20px;
         }
 
         h2,
@@ -247,36 +248,29 @@
             event.preventDefault();
 
             var valid = true;
-            if ($("#name").val() === "") {
-                valid = false;
-            } 
-            if (valid === true) {
-                var newFriend = {
-                    name: $("#name").val().trim(),
-                    scores: [
-                        $("#inputGroupSelect01").val(),
-                        $("#inputGroupSelect02").val(),
-                        $("#inputGroupSelect03").val(),
-                        $("#inputGroupSelect04").val(),
-                        $("#inputGroupSelect05").val(),
-                        $("#inputGroupSelect06").val(),
-                        $("#inputGroupSelect07").val(),
-                        $("#inputGroupSelect08").val(),
-                        $("#inputGroupSelect09").val(),
-                        $("#inputGroupSelect10").val()
-                    ]
-                };
-                var currentURL = window.location.origin;
-                // Ajax call for receiving response after POST req
-                $.post('/api/friends', newFriend)
-                    .done(function (data) {
-                        $('#specialFriend').html(data.name);
-                        $('#specialFriendModal').modal('open');
-                    });
-            } else {
-                // If a required field is missing, show alert
-                alert("Form unfinished!");
-            }
+
+            var newFriend = {
+                name: $("#name").val().trim(),
+                scores: [
+                    $("#inputGroupSelect01").val(),
+                    $("#inputGroupSelect02").val(),
+                    $("#inputGroupSelect03").val(),
+                    $("#inputGroupSelect04").val(),
+                    $("#inputGroupSelect05").val(),
+                    $("#inputGroupSelect06").val(),
+                    $("#inputGroupSelect07").val(),
+                    $("#inputGroupSelect08").val(),
+                    $("#inputGroupSelect09").val(),
+                    $("#inputGroupSelect10").val()
+                ]
+            };
+            var currentURL = window.location.origin;
+            $.post('/api/friends', newFriend)
+                .done(function (data) {
+                    $('#specialFriend').html(data.name);
+                    $('#specialFriendModal').modal('open');
+                });
+
         });
     </script>
 </body>
