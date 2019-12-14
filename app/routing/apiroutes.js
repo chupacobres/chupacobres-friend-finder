@@ -30,6 +30,7 @@ module.exports = function (app) {
             if (totalDifference < minDifference) {
                 friendIndex = i;
                 minDifference = totalDifference;
+                console.log(friends[i])
             }
         }
 
